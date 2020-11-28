@@ -17,13 +17,10 @@ namespace cw2_ssd.Models
                 // Creates an instance of role manager
                 RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
                 
-                // Random number instance for example id's
-                Random rnd = new Random();
-                
                 // Create Example Tickets
                 var closedTicket = new Ticket
                 {
-                    TicketID = rnd.Next(1, 10000),
+                    TicketID = "1",
                     ErrorTitle = "Error found in Google files!",
                     ErrorDesc = "Logic error regarding search",
                     TicketDate = DateTime.Now,
@@ -36,7 +33,7 @@ namespace cw2_ssd.Models
                 
                 var openTicket = new Ticket
                 {
-                    TicketID = rnd.Next(1, 10000),
+                    TicketID = "2",
                     ErrorTitle = "Can't push to Github!",
                     ErrorDesc = "Sorry guys, I'm the new guy and I don't know how Github works",
                     TicketDate = DateTime.Now,
@@ -49,7 +46,7 @@ namespace cw2_ssd.Models
                 
                 var resolvedTicket = new Ticket
                 {
-                    TicketID = rnd.Next(1, 10000),
+                    TicketID = "3",
                     ErrorTitle = "Consistent Crashes in the Hendrix Project",
                     ErrorDesc = "Everytime a whole number is inputted into the interface, a crash occurs",
                     TicketDate = DateTime.Now,

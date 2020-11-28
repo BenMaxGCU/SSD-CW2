@@ -17,7 +17,7 @@ namespace cw2_ssd.Models
         /// New instance of user manager
         /// </summary>
         [NotMapped] private ApplicationUserManager _userManager;
-        
+
         /// <summary>
         /// The date the user was registered
         /// </summary>

@@ -33,6 +33,7 @@
         <e p="AccountController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
         <e p="ManageController.cs" t="Include" />
+        <e p="TicketsController.cs" t="Include" />
       </e>
       <e p="cw2_ssd.csproj" t="IncludeRecursive" />
       <e p="cw2_ssd.sln" t="IncludeFlat" />
@@ -225,6 +226,13 @@
           <e p="_LoginPartial.cshtml" t="Include" />
           <e p="Error.cshtml" t="Include" />
           <e p="Lockout.cshtml" t="Include" />
+        </e>
+        <e p="Tickets" t="Include">
+          <e p="Create.cshtml" t="Include" />
+          <e p="Delete.cshtml" t="Include" />
+          <e p="Details.cshtml" t="Include" />
+          <e p="Edit.cshtml" t="Include" />
+          <e p="Index.cshtml" t="Include" />
         </e>
         <e p="Web.config" t="Include" />
       </e>

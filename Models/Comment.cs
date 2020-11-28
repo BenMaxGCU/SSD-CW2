@@ -7,14 +7,18 @@ namespace cw2_ssd.Models
     public class Comment
     {
         [Key] 
-        public int CommentID { get; set; }
+        public string CommentID { get; set; }
         
-        [ForeignKey("User")]
-        public int UserID { get; set; }
-        public User User { get; set; }
-        
+        [ForeignKey("Customer")]
+        public string CustomerID { get; set; }
+        public Customer Customer { get; set; }
+
+        [ForeignKey("Staff")]
+        public string StaffID { get; set; }
+        public Staff Staff { get; set; }
+
         [ForeignKey("Ticket")]
-        public int TicketID { get; set; }
+        public string TicketID { get; set; }
         public Ticket Ticket { get; set; }
         
         [Required]

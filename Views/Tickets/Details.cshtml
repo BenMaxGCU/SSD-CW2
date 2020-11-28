@@ -1,0 +1,66 @@
+﻿@model cw2_ssd.Models.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ErrorTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ErrorTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ErrorDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ErrorDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketPriority)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketPriority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketState)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

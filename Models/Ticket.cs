@@ -7,7 +7,7 @@ namespace cw2_ssd.Models
     public class Ticket
     {
         [Key]
-        public int TicketID { get; set; }
+        public string TicketID { get; set; }
         
         [Required]
         [DataType(DataType.Date)]

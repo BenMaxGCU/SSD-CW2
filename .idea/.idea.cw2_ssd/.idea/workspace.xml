@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53f88a9d-d664-4a3d-a673-6e97fe74c25b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/cw2_ssd/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cw2_ssd/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Comment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Staff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Staff.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Ticket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/TicketDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/TicketDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw2_ssd.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/cw2_ssd.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw2_ssd.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/cw2_ssd.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +35,11 @@
     <setting file="file://$PROJECT_DIR$/Models/AccountViewModels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/ManageViewModels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/IdentityModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/ManageController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Customer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/TicketsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/DatabaseInitaliser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Staff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/TicketDbContext.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +60,8 @@
         <option value="$PROJECT_DIR$/Models/Ticket.cs" />
         <option value="$PROJECT_DIR$/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" />
+        <option value="$PROJECT_DIR$/Controllers/TicketsController.cs" />
+        <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
       </list>
     </option>
   </component>
@@ -97,7 +115,8 @@
       <workItem from="1606477036939" duration="647000" />
       <workItem from="1606477704023" duration="1154000" />
       <workItem from="1606481680884" duration="1945000" />
-      <workItem from="1606554726307" duration="5757000" />
+      <workItem from="1606554726307" duration="6427000" />
+      <workItem from="1606562740379" duration="398000" />
     </task>
     <servers />
   </component>
