@@ -30,6 +30,5 @@ namespace cw2_ssd.Models
         /// Retrieves content from these classes and uses them to add into the database
         /// </summary>
         public System.Data.Entity.DbSet<cw2_ssd.Models.Ticket> Tickets { get; set; }
-        public System.Data.Entity.DbSet<cw2_ssd.Models.Comment> Comments { get; set; }
     }
 }

@@ -11,7 +11,34 @@ namespace cw2_ssd.Models
         
         [Required]
         [DataType(DataType.Date)]
-        [Display(Name = "Ticket Creation Date")]
-        public DateTime? ticketDate { get; set; }
+        [Display(Name = "Ticket Timestamp")]
+        public DateTime? TicketDate { get; set; }
+        
+        [Required]
+        [Display(Name = "Error Title")]
+        public string ErrorTitle { get; set; }
+        
+        [Required]
+        [Display(Name = "Error Description")]
+        public string ErrorDesc { get; set; }
+        
+        [Required]
+        [Display(Name = "Ticket Type")]
+        public string TicketType { get; set; }
+        
+        [Required]
+        [Display(Name = "Ticket Priority")]
+        public string TicketPriority { get; set; }
+        
+        [Required]
+        [Display(Name = "Ticket State")]
+        public string TicketState { get; set; }
+        
+        public List<Comment> ListOfComments { get; set; }
+
+        public Ticket()
+        {
+            ListOfComments = new List<Comment>();
+        }
     }
 }

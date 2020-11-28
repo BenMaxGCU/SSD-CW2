@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53f88a9d-d664-4a3d-a673-6e97fe74c25b" name="Default Changelist" comment="" />
+    <list default="true" id="53f88a9d-d664-4a3d-a673-6e97fe74c25b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Comment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Ticket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/TicketDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/TicketDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Web.config" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Models/AccountViewModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ManageViewModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/IdentityModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Customer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/DatabaseInitaliser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Staff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/TicketDbContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ManageViewModels.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/IdentityModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Comment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Ticket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Customer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Models/Comment.cs" />
-        <option value="$PROJECT_DIR$/Models/TicketDbContext.cs" />
-        <option value="$PROJECT_DIR$/Models/Customer.cs" />
         <option value="$PROJECT_DIR$/Models/Staff.cs" />
-        <option value="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" />
         <option value="$PROJECT_DIR$/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Models/TicketDbContext.cs" />
+        <option value="$PROJECT_DIR$/Web.config" />
+        <option value="$PROJECT_DIR$/Models/Customer.cs" />
         <option value="$PROJECT_DIR$/Models/Ticket.cs" />
+        <option value="$PROJECT_DIR$/Models/Comment.cs" />
+        <option value="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1kp3wTMBAtQzRadna0zpglzyu1v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,7 +57,9 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
     <configuration name="cw2_ssd" type="DotNetProject" factoryName=".NET Project">
@@ -74,15 +93,41 @@
       <option name="presentableId" value="Default" />
       <updated>1606383944020</updated>
       <workItem from="1606383948181" duration="3165000" />
+      <workItem from="1606421790610" duration="9000" />
+      <workItem from="1606477036939" duration="647000" />
+      <workItem from="1606477704023" duration="1154000" />
+      <workItem from="1606481680884" duration="1945000" />
+      <workItem from="1606554726307" duration="5757000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1606477765986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606477765986" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1606481691275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606481691275" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606385551754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
