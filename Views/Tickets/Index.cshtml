@@ -1,63 +1,68 @@
 ﻿@model IEnumerable<cw2_ssd.Models.Ticket>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Error Tickets";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TicketDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ErrorTitle)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ErrorDesc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TicketType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TicketPriority)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TicketState)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TicketDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ErrorTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ErrorDesc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TicketType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TicketPriority)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TicketState)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TicketID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TicketID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TicketID })
-        </td>
-    </tr>
-}
-
-</table>
+<section id="tickets">
+    <div class="container">
+        <h2 class="ticketHeader">Error Tickets</h2>
+        
+        <p class="createBtn">
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TicketDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ErrorTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ErrorDesc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TicketType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TicketPriority)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TicketState)
+                </th>
+                <th></th>
+            </tr>
+        
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ErrorTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ErrorDesc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketPriority)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TicketState)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.TicketID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.TicketID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.TicketID })
+                </td>
+            </tr>
+        }
+        
+        </table>
+    </div>
+</section>

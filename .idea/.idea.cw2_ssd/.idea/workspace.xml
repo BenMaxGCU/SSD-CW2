@@ -5,20 +5,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cw2_ssd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/cw2_ssd/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/cw2_ssd/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Comment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Staff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Staff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Ticket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Content/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Tickets/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tickets/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Tickets/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Tickets/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.dll.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/cw2_ssd.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cw2_ssd.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cw2_ssd.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/cw2_ssd.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw2_ssd.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/cw2_ssd.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/cw2_ssd.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/cw2_ssd.pdb" afterDir="false" />
@@ -32,6 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Views/Tickets/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/AccountViewModels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/ManageViewModels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/IdentityModels.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +47,10 @@
     <setting file="file://$PROJECT_DIR$/Models/Ticket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Tickets/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,7 +64,15 @@
         <option value="$PROJECT_DIR$/Models/Comment.cs" />
         <option value="$PROJECT_DIR$/Models/DatabaseInitaliser.cs" />
         <option value="$PROJECT_DIR$/Controllers/TicketsController.cs" />
+        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Content/Site.css" />
         <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Tickets/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Account/Register.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Tickets/Create.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Account/Login.cshtml" />
+        <option value="$PROJECT_DIR$/Content/index.css" />
       </list>
     </option>
   </component>
@@ -116,7 +127,7 @@
       <workItem from="1606477704023" duration="1154000" />
       <workItem from="1606481680884" duration="1945000" />
       <workItem from="1606554726307" duration="6427000" />
-      <workItem from="1606562740379" duration="398000" />
+      <workItem from="1606562740379" duration="11652000" />
     </task>
     <servers />
   </component>
@@ -143,13 +154,81 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606477765986" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606583374503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1037" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560733" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606583374503" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606583374503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1037" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560733" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606583374503" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606583374503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1037" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560733" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606583374503" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606583374503">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1037" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560733" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606583374503" />
+    <state width="1037" height="684" key="GridCell.Tab.1.bottom" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.1.center" timestamp="1606564560116">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.1.center/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560116" />
+    <state width="1037" height="684" key="GridCell.Tab.1.left" timestamp="1606564560116">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.1.left/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560116" />
+    <state width="1037" height="684" key="GridCell.Tab.1.right" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.1.right/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.2.bottom" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.2.center" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.2.center/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.2.left" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.2.left/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.2.right" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.2.right/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.3.bottom" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.3.center" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.3.center/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.3.left" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.3.left/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
+    <state width="1037" height="684" key="GridCell.Tab.3.right" timestamp="1606564560117">
+      <screen x="-1080" y="-663" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="684" key="GridCell.Tab.3.right/0.0.1920.1040/-1080.-663.1080.1880@-1080.-663.1080.1880" timestamp="1606564560117" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1606481691275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606481691275" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606385551754">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606567771637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606385551754" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1080.-663.1080.1880@0.0.1920.1040" timestamp="1606567771637" />
   </component>
 </project>

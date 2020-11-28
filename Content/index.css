@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
 @import url('/Content/bootstrap.css');
 
 /* General
@@ -20,7 +21,7 @@ body {
     background-attachment: fixed;
     background-origin: initial;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     color: white;
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
@@ -108,8 +109,8 @@ h6 {
         transition: all 0.5s;
     }
 
-/* Hero
------------------------------------------------------*/
+/* Hero (Homepage) - Home Controller
+--------------------------------------------------------------*/
 
 #hero {
     width: 100%;
@@ -119,77 +120,360 @@ h6 {
     border-style: none;
 }
 
-    #hero:before {
-        content: "";
-        background: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
+#hero:before {
+    content: '';
+    background: rgba(0,0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #f7fffd;
+}
+
+#hero h2 {
+    color: #eff7f6;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+#hero .hero-container .icon-box {
+    background: transparent;
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+#hero .hero-container .icon-box .icon {
+    float: left;
+    background: transparent;
+    width: 52px;
+    height: 52px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #eff7f6;
+}
+
+#hero .hero-container .icon-box .icon i {
+    color: #eff7f6;
+    font-size: 36px;
+}
+
+#hero .btn-get-started:hover {
+    background: #7bdff2;
+    border: 2px solid #7bdff2;
+    text-decoration: none;
+}
+
+/* About (Homepage) - Home Controller
+--------------------------------------------------------------*/
+
+#about {
+    background: #333;
+    padding: 80px 0;
+}
+
+#about .about-container .background {
+    border-radius: 35px;
+    min-height: 500px;
+    background: url('../Content/Img/about-img.png') center top no-repeat;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: block;
+    animation-duration: 4s;
+}
+
+#about .about-container .content {
+    background: #333;
+}
+
+#about .about-container .title {
+    color: #eff7f6;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+#about .about-container p {
+    line-height: 26px;
+    color: #eff7f6;
+}
+
+#about .about-container p:last-child {
+    margin-bottom: 0;
+}
+
+#about .about-container ul {
+    list-style-type: none;
+}
+
+#about .about-container li {
+    font-family: 'Alata', sans-serif;
+    color: #eff7f6;
+}
+
+#about .about-container .listHeader {
+    color: #eff7f6;
+    font-weight: 600;
+}
+
+#about .about-container .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+
+#about .about-container .leftDiv { grid-area: 1 / 1 / 6 / 2; }
+#about .about-container .rightDiv { grid-area: 1 / 2 / 6 / 3; }
+
+
+@media only screen and (max-width: 600px) {
+    #about {
+        background: #f7fffd;
+        padding: 15px 0;
     }
 
-    #hero .hero-container {
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
+    #about .about-container .background {
+        border-radius: 35px;
+        min-height: 300px;
+        max-width: 300px;
+        background: url('../Content/Img/about-img.png') center top no-repeat;
+        background-size: cover;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+    #about {
+        background: #f7fffd;
+        padding: 20px 0;
     }
 
-    #hero h1 {
-        margin: 30px 0 10px 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 56px;
-        text-transform: uppercase;
-        color: #fff;
+    #about .about-container .background {
+        border-radius: 35px;
+        min-height: 300px;
+        max-width: 300px;
+        background: url('../Content/Img/about-img.png') center top no-repeat;
+        background-size: cover;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+        display: block;
     }
+}
 
-    #hero h2 {
-        color: #eee;
-        margin-bottom: 50px;
-        font-size: 24px;
-    }
+/* Index View (Homepage) - Tickets Controller
+--------------------------------------------------------------*/
+#tickets {
+    margin-top: 10vh;
+    color: #f7fffd;
+}
 
-    #hero .btn-get-started {
-        font-family: "Open Sans", sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 8px 28px;
-        border-radius: 50px;
-        transition: 0.5s;
-        margin: 10px;
-        border: 2px solid #fff;
-        color: #fff;
-    }
+#tickets table {
+    margin: 2vh auto; 
+}
 
-        #hero .btn-get-started:hover {
-            background: #d00000;
-            border: 2px solid #d00000;
-            text-decoration: none;
-        }
+#tickets tr {
+    color: #f7fffd;
+}
+
+#tickets th {
+    color: #f7fffd;
+    border: none;
+}
+
+#tickets td {
+    color: #f7fffd;
+    border: none;
+}
+
+.ticketHeader {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.createBtn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #e4c1f9;
+    margin: 0.3em 1em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration:none;
+    font-weight: 300;
+    color: #e4c1f9;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.createBtn:hover {
+    color: #171319;
+    background-color: #e4c1f9;
+    cursor: pointer;
+}
+
+/* Tickets Controller Form
+--------------------------------------------------------------*/
+#ticketsForm .formCon {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticketsForm .txtInput {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+
+#ticketsForm input[type=submit] {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #e4c1f9;
+    margin: 0.3em 1em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration:none;
+    font-weight: 300;
+    color: #e4c1f9;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#ticketsForm input[type=submit]:hover {
+    color: #171319;
+    background-color: #e4c1f9;
+    cursor: pointer;
+}
+
+#ticketsForm input[type=text] {
+    min-width: 1000px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+#ticketsForm input[type=date] {
+    min-width: 1000px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+
+#ticketsForm label {
+    max-width: 100%;
+}
+
+/* Login
+-----------------------------------------------------*/
+#loginForm input[type=submit] {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #e4c1f9;
+    margin: 0.3em 1em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration:none;
+    font-weight: 300;
+    color: #e4c1f9;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#loginForm input[type=submit]:hover {
+    color: #171319;
+    background-color: #e4c1f9;
+    cursor: pointer;
+}
+
+#loginForm input[type=text] {
+    min-width: 1000px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+#loginForm input[type=password] {
+    min-width: 1000px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+#loginForm input[type=checkbox] {
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#loginForm input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+#loginForm
 
 /* Nav Menu
 -----------------------------------------------------*/

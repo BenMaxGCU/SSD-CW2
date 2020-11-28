@@ -6,6 +6,7 @@
     <title>@ViewBag.Title</title>
     <link href="/Content/index.css" rel="stylesheet" />
     <link href="/Content/site.css" rel="stylesheet" />
+    @Scripts.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
@@ -18,20 +19,15 @@
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu" id="nav">
-                    <li><a style="text-decoration: none;" href="@Url.Action("Index", "Home")">Tickets</a></li>
-                    <li><a style="text-decoration: none;" href="@Url.Action("About", "Home")">Login</a></li>
+                    <li><a style="text-decoration: none;" href="@Url.Action("Index", "Tickets")">Tickets</a></li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
-                @Html.Partial("_LoginPartial")
             </nav>
         </div>
     </header>
 
-    <div class="container body-content">
+    <div>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>Ben Maxwell - SSD Coursework 2</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

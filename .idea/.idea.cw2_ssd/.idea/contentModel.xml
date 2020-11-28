@@ -26,6 +26,7 @@
         <e p="bootstrap.min.css.map" t="Include" />
         <e p="font-awesome.css" t="Include" />
         <e p="font-awesome.min.css" t="Include" />
+        <e p="Img" t="Include" />
         <e p="index.css" t="Include" />
         <e p="Site.css" t="Include" />
       </e>
