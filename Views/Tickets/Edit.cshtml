@@ -4,9 +4,10 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
-
-
+<section id="ticketsForm">
+    <div style="margin-top: 10vh" class="container">
+        <h2>Edit</h2>
+        
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -76,6 +77,8 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+    </div>
+</section>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

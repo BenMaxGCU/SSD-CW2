@@ -1,6 +1,9 @@
 ﻿@model IEnumerable<cw2_ssd.Models.Ticket>
 
 @{
+    // Used to validate only admins and users to see the CRUD buttons
+    bool validUser = (User.IsInRole("Admin") || User.IsInRole("Staff"));
+    bool validCustomer = (User.IsInRole("Customer"));
     ViewBag.Title = "Error Tickets";
 }
 
@@ -8,10 +11,13 @@
     <div class="container">
         <h2 class="ticketHeader">Error Tickets</h2>
         
-        <p class="createBtn">
-            @Html.ActionLink("Create New", "Create")
-        </p>
-        
+        @if (validUser)
+        {
+            <p class="createBtn">
+                @Html.ActionLink("Create New", "Create")
+            </p>
+        }
+
         <table class="table">
             <tr>
                 <th>
@@ -55,11 +61,20 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.TicketState)
                 </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id=item.TicketID }) |
-                    @Html.ActionLink("Details", "Details", new { id=item.TicketID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id=item.TicketID })
-                </td>
+                @if (validUser)
+                {
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.TicketID }) |
+                        @Html.ActionLink("View", "Details", new { id=item.TicketID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.TicketID }) |
+                    </td>  
+                }
+                @if (validCustomer)
+                {
+                    <td>
+                        @Html.ActionLink("View", "Details", new { id=item.TicketID })
+                    </td>
+                }
             </tr>
         }
         

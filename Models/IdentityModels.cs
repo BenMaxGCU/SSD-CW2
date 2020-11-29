@@ -21,7 +21,7 @@ namespace cw2_ssd.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("TicketConnection", throwIfV1Schema: false)
         {
         }
 

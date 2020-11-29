@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    // Boolean variable to validate if the current user is logged in
+    // Will be used to hide tickets link from non-registered users
+    bool validUser = (User.IsInRole("Admin") || User.IsInRole("Staff") || User.IsInRole("Customer"));
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,7 +25,10 @@
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu" id="nav">
-                    <li><a style="text-decoration: none;" href="@Url.Action("Index", "Tickets")">Tickets</a></li>
+                    @if (validUser)
+                    {
+                        <li><a style="text-decoration: none;" href="@Url.Action("Index", "Tickets")">Tickets</a></li>
+                    }
                     @Html.Partial("_LoginPartial")
                 </ul>
             </nav>

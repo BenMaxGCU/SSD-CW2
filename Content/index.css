@@ -24,7 +24,6 @@ body {
     background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
     color: white;
     font-family: 'Open Sans', sans-serif;
-    min-height: 100vh;
 }
 
 header {
@@ -367,6 +366,12 @@ h6 {
     cursor: pointer;
 }
 
+/* Details View (Commentable Area) - Tickets Controller
+--------------------------------------------------------------*/
+#ticketsView {
+    margin-top: 10vh;
+    color: #f7fffd;
+}
 /* Tickets Controller Form
 --------------------------------------------------------------*/
 #ticketsForm .formCon {
