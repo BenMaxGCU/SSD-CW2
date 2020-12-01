@@ -24,6 +24,7 @@ namespace cw2_ssd
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/index.css",
                       "~/Content/site.css"));
         }
     }

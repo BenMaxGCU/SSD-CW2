@@ -6,21 +6,40 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using cw2_ssd.Models;
+using Microsoft.AspNet.Identity;
 
 namespace cw2_ssd.Controllers
 {
     public class TicketsController : Controller
     {
         private TicketDbContext db = new TicketDbContext();
-
+        
         // GET: Tickets
+        [Authorize(Roles = "Admin, Staff, Customer")]
         public ActionResult Index()
         {
-            return View(db.Tickets.ToList());
+            // Checks user for customer role
+            if (User.IsInRole("Customer"))
+            {
+                // Finds current user and then gets their company name
+                Customer user = (Customer) db.Users.Find(User.Identity.GetUserId());
+                string clientCompany = user.CompanyName;
+                
+                // Filters tickets by the company name to ensure only customers from specific companies can view their tickets
+                var tickets = db.Tickets.Where(b => b.ClientCompany.Equals(clientCompany));
+                return View(tickets.ToList());
+            }
+            else
+            {
+                // Displays all tickets to Staff and Admin
+                return View(db.Tickets.ToList());
+            }
         }
 
         // GET: Tickets/Details/5
+        [Authorize(Roles = "Admin, Staff, Customer")]
         public ActionResult Details(string id)
         {
             if (id == null)
@@ -36,6 +55,7 @@ namespace cw2_ssd.Controllers
         }
 
         // GET: Tickets/Create
+        [Authorize(Roles = "Admin, Staff")]
         public ActionResult Create()
         {
             return View();
@@ -46,11 +66,24 @@ namespace cw2_ssd.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "TicketID,TicketDate,ErrorTitle,ErrorDesc,TicketType,TicketPriority,TicketState")] Ticket ticket)
+        [Authorize(Roles = "Admin, Staff")]
+        public ActionResult Create([Bind(Include = "TicketID, StaffID,TicketDate,ErrorTitle,ErrorDesc,TicketType,TicketPriority,TicketState, ClientCompany")] TicketViewModel ticket)
         {
             if (ModelState.IsValid)
             {
-                db.Tickets.Add(ticket);
+                Ticket newTicket = new Ticket();
+                string ticketId = Guid.NewGuid().ToString();
+                
+                newTicket.TicketID = ticketId;
+                newTicket.StaffID = User.Identity.GetUserId();
+                newTicket.ErrorTitle = ticket.ErrorTitle;
+                newTicket.ErrorDesc = ticket.ErrorDesc;
+                newTicket.TicketType = ticket.TicketType;
+                newTicket.TicketPriority = ticket.TicketPriority;
+                newTicket.TicketState = "Open";
+                newTicket.TicketDate = DateTime.Now;
+                newTicket.ClientCompany = ticket.ClientCompany;
+                db.Tickets.Add(newTicket);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -59,6 +92,7 @@ namespace cw2_ssd.Controllers
         }
 
         // GET: Tickets/Edit/5
+        [Authorize(Roles = "Admin, Staff")]
         public ActionResult Edit(string id)
         {
             if (id == null)
@@ -78,7 +112,8 @@ namespace cw2_ssd.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "TicketID,TicketDate,ErrorTitle,ErrorDesc,TicketType,TicketPriority,TicketState")] Ticket ticket)
+        [Authorize(Roles = "Admin, Staff")]
+        public ActionResult Edit([Bind(Include = "TicketID, StaffID,TicketDate,ErrorTitle,ErrorDesc,TicketType,TicketPriority,TicketState, ClientCompany")] Ticket ticket)
         {
             if (ModelState.IsValid)
             {
@@ -90,6 +125,7 @@ namespace cw2_ssd.Controllers
         }
 
         // GET: Tickets/Delete/5
+        [Authorize(Roles = "Admin, Staff")]
         public ActionResult Delete(string id)
         {
             if (id == null)
@@ -107,6 +143,7 @@ namespace cw2_ssd.Controllers
         // POST: Tickets/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin, Staff")]
         public ActionResult DeleteConfirmed(string id)
         {
             Ticket ticket = db.Tickets.Find(id);

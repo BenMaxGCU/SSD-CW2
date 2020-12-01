@@ -6,7 +6,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace cw2_ssd.Models
 {
-    public class DatabaseInitaliser : DropCreateDatabaseIfModelChanges<TicketDbContext>
+    public class DatabaseInitaliser : DropCreateDatabaseAlways<TicketDbContext>
     {
         protected override void Seed(TicketDbContext context)
         {
@@ -16,47 +16,7 @@ namespace cw2_ssd.Models
             {
                 // Creates an instance of role manager
                 RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
-                
-                // Create Example Tickets
-                var closedTicket = new Ticket
-                {
-                    TicketID = "1",
-                    ErrorTitle = "Error found in Google files!",
-                    ErrorDesc = "Logic error regarding search",
-                    TicketDate = DateTime.Now,
-                    TicketType = "Development",
-                    TicketPriority = "Low",
-                    TicketState = "Closed"
-                };
-                context.Tickets.Add(closedTicket);
-                context.SaveChanges();
-                
-                var openTicket = new Ticket
-                {
-                    TicketID = "2",
-                    ErrorTitle = "Can't push to Github!",
-                    ErrorDesc = "Sorry guys, I'm the new guy and I don't know how Github works",
-                    TicketDate = DateTime.Now,
-                    TicketType = "Production",
-                    TicketPriority = "High",
-                    TicketState = "Open"
-                };
-                context.Tickets.Add(openTicket);
-                context.SaveChanges();
-                
-                var resolvedTicket = new Ticket
-                {
-                    TicketID = "3",
-                    ErrorTitle = "Consistent Crashes in the Hendrix Project",
-                    ErrorDesc = "Everytime a whole number is inputted into the interface, a crash occurs",
-                    TicketDate = DateTime.Now,
-                    TicketType = "Testing",
-                    TicketPriority = "Low",
-                    TicketState = "Resolved"
-                };
-                context.Tickets.Add(resolvedTicket);
-                context.SaveChanges();
-                
+
                 //Creates roles for the role manager if they don't exist
                 if (!roleManager.RoleExists("Admin"))
                 {
@@ -178,6 +138,52 @@ namespace cw2_ssd.Models
                 }
 
                 // Save all users
+                context.SaveChanges();
+                
+                // Create Example Tickets
+                var closedTicket = new Ticket
+                {
+                    TicketID = Guid.NewGuid().ToString(),
+                    StaffID = context.Users.Where(x => x.Email.Equals("admin@ssts.com")).FirstOrDefault().Id,
+                    ErrorTitle = "Error found in Google files!",
+                    ErrorDesc = "Logic error regarding search",
+                    TicketDate = DateTime.Now,
+                    TicketType = "Development",
+                    TicketPriority = "Low",
+                    TicketState = "Closed",
+                    ClientCompany = "Vai"
+                };
+                context.Tickets.Add(closedTicket);
+                context.SaveChanges();
+                
+                var openTicket = new Ticket
+                {
+                    TicketID = Guid.NewGuid().ToString(),
+                    StaffID = context.Users.Where(x => x.Email.Equals("admin@ssts.com")).FirstOrDefault().Id,
+                    ErrorTitle = "Can't push to Github!",
+                    ErrorDesc = "Sorry guys, I'm the new guy and I don't know how Github works",
+                    TicketDate = DateTime.Now,
+                    TicketType = "Production",
+                    TicketPriority = "High",
+                    TicketState = "Open",
+                    ClientCompany = "Hendrix"
+                };
+                context.Tickets.Add(openTicket);
+                context.SaveChanges();
+                
+                var resolvedTicket = new Ticket
+                {
+                    TicketID = Guid.NewGuid().ToString(),
+                    StaffID = context.Users.Where(x => x.Email.Equals("admin@ssts.com")).FirstOrDefault().Id,
+                    ErrorTitle = "Consistent Crashes in the Hendrix Project",
+                    ErrorDesc = "Everytime a whole number is inputted into the interface, a crash occurs",
+                    TicketDate = DateTime.Now,
+                    TicketType = "Testing",
+                    TicketPriority = "Low",
+                    TicketState = "Resolved",
+                    ClientCompany = "Hendrix"
+                };
+                context.Tickets.Add(resolvedTicket);
                 context.SaveChanges();
             } // End of if statement
         }
