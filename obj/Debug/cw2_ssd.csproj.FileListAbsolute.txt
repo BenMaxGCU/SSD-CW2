@@ -1,3 +1,5 @@
+B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.csprojAssemblyReference.cache
+B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.csproj.CoreCompileInputs.cache
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\cw2_ssd.dll.config
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\cw2_ssd.dll
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\cw2_ssd.pdb
@@ -101,8 +103,6 @@ B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\Microsoft.Owin.Secur
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\Microsoft.Owin.Security.OAuth.xml
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.csprojAssemblyReference.cache
-B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.csproj.CoreCompileInputs.cache
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.csproj.CopyComplete
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.dll
 B:\Downloads\Caledonian Work\Secure Web\CW2 MVC\cw2_ssd\obj\Debug\cw2_ssd.pdb

@@ -1,4 +1,5 @@
 ﻿@model cw2_ssd.Models.Ticket
+@using Microsoft.AspNet.Identity;
 
 @{
     bool validUser = (User.IsInRole("Admin") || User.IsInRole("Staff"));
@@ -8,7 +9,7 @@
 <section id="ticketsView">
     <div class="container">
         <h2>Details</h2>
-        
+
         <div>
             <h4>Ticket</h4>
             <hr />
@@ -16,51 +17,51 @@
                 <dt>
                     @Html.DisplayNameFor(model => model.TicketDate)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.TicketDate)
                 </dd>
-        
+
                 <dt>
                     @Html.DisplayNameFor(model => model.ErrorTitle)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.ErrorTitle)
                 </dd>
-        
+
                 <dt>
                     @Html.DisplayNameFor(model => model.ErrorDesc)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.ErrorDesc)
                 </dd>
-        
+
                 <dt>
                     @Html.DisplayNameFor(model => model.TicketType)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.TicketType)
                 </dd>
-        
+
                 <dt>
                     @Html.DisplayNameFor(model => model.TicketPriority)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.TicketPriority)
                 </dd>
-        
+
                 <dt>
                     @Html.DisplayNameFor(model => model.TicketState)
                 </dt>
-        
+
                 <dd>
                     @Html.DisplayFor(model => model.TicketState)
                 </dd>
-                
+
                 <dt>
                     @Html.DisplayNameFor(model => model.ClientCompany)
                 </dt>
@@ -68,17 +69,52 @@
                 <dd>
                     @Html.DisplayFor(model => model.ClientCompany)
                 </dd>
-
             </dl>
         </div>
         <p>
             @if (validUser)
             {
-                @Html.ActionLink("Edit", "Edit", new {id = Model.TicketID})
+                @Html.ActionLink("Edit", "Edit", new { id = Model.TicketID })
             }
             | @Html.ActionLink("Back to List", "Index")
         </p>
+
+        <div class="container commentsDiv">
+            <div id="comments">
+                <h3>Comments</h3>
+                @foreach (var comment in Model.ListOfComments)
+                {
+                    <div class="commentContainer" id="@comment.CommentID">
+                        <div>
+                            <h6 class="commentUser">@comment.User.Email</h6> <span class="commentText">@comment.CommentText</span>
+                            <div class="commentFooter">
+                                <span>Date Posted: @comment.CommentTimestamp</span> <br/>
+                                @if (User.Identity.Name.Equals(comment.User.Email))
+                                {
+                                    <button type="button" class="commentBtn btn btn-danger btn-sm" onclick="deleteComment('@comment.CommentID')">Delete</button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        @if (!Model.TicketState.Equals("Closed") && User.Identity.IsAuthenticated)
+        {
+            <form>
+                <div class="form-group">
+                    <label>Comment Text</label>
+                    <input type="text" class="form-control" id="commentText" placeholder="Enter Comment" />
+                </div>
+
+                <button type="submit" id="commentSubmit" class="commentSubmit" onclick="createComment('@User.Identity.GetUserId()', '@Model.TicketID', '@User.Identity.Name')">Submit</button>
+            </form>
+        }
     </div>
 </section>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Scripts/commentScript.js")
 
 

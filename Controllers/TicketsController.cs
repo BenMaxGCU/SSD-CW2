@@ -47,6 +47,8 @@ namespace cw2_ssd.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Ticket ticket = db.Tickets.Find(id);
+            var comments = db.Comments.ToList();
+            var user = db.Users.Where(x => x.Email.Equals(User.Identity.Name)).FirstOrDefault();
             if (ticket == null)
             {
                 return HttpNotFound();

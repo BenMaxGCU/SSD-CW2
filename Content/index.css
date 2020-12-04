@@ -489,6 +489,55 @@ h6 {
 #manageForm label {
     max-width: 100%;
 }
+
+/* Comments
+--------------------------------------------------------------*/
+.commentsDiv {
+    margin-bottom: 2vh;
+}
+
+.commentContainer {
+    margin-bottom: 5px;
+}
+
+.commentText {
+    font-size: 16px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.commentUser {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.commentBtn {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.commentSubmit {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #e4c1f9;
+    margin: 0.3em 1em 0.3em 0;
+    border-radius: 0.12em;
+    text-decoration:none;
+    font-weight: 300;
+    color: #e4c1f9;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.commentSubmit:hover {
+    color: #171319;
+    background-color: #e4c1f9;
+    cursor: pointer;
+}
+
 /* Login
 -----------------------------------------------------*/
 #loginForm input[type=submit] {

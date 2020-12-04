@@ -32,6 +32,7 @@
       </e>
       <e p="Controllers" t="Include">
         <e p="AccountController.cs" t="Include" />
+        <e p="CommentsController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
         <e p="ManageController.cs" t="Include" />
         <e p="TicketsController.cs" t="Include" />
@@ -77,6 +78,7 @@
         <e p="bootstrap.js.map" t="Include" />
         <e p="bootstrap.min.js" t="Include" />
         <e p="bootstrap.min.js.map" t="Include" />
+        <e p="commentScript.js" t="Include" />
         <e p="esm" t="Include">
           <e p="popper-utils.js" t="Include" />
           <e p="popper-utils.js.map" t="Include" />
@@ -211,6 +213,7 @@
           <e p="SendCode.cshtml" t="Include" />
           <e p="VerifyCode.cshtml" t="Include" />
         </e>
+        <e p="Comments" t="Include" />
         <e p="Home" t="Include">
           <e p="About.cshtml" t="Include" />
           <e p="Index.cshtml" t="Include" />

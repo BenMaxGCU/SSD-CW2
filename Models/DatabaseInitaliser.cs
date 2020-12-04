@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Microsoft.AspNet.Identity;
@@ -159,14 +160,31 @@ namespace cw2_ssd.Models
                 var openTicket = new Ticket
                 {
                     TicketID = Guid.NewGuid().ToString(),
-                    StaffID = context.Users.Where(x => x.Email.Equals("admin@ssts.com")).FirstOrDefault().Id,
+                    StaffID = context.Users.Where(x => x.Email.Equals("sam@ssts.com")).FirstOrDefault().Id,
                     ErrorTitle = "Can't push to Github!",
                     ErrorDesc = "Sorry guys, I'm the new guy and I don't know how Github works",
                     TicketDate = DateTime.Now,
                     TicketType = "Production",
                     TicketPriority = "High",
                     TicketState = "Open",
-                    ClientCompany = "Hendrix"
+                    ClientCompany = "Hendrix",
+                    ListOfComments = new List<Comment>()
+                    {
+                        new Comment()
+                        {
+                            CommentID = Guid.NewGuid().ToString(),
+                            UserID = context.Users.Where(x => x.Email.Equals("admin@ssts.com")).FirstOrDefault().Id,
+                            CommentTimestamp = DateTime.Now,
+                            CommentText = "Oh boy, here we go"
+                        },
+                        new Comment()
+                        {
+                            CommentID = Guid.NewGuid().ToString(),
+                            UserID = context.Users.Where(x => x.Email.Equals("sam@ssts.com")).FirstOrDefault().Id,
+                            CommentTimestamp = DateTime.Now,
+                            CommentText = "I take personal offence to that, don't you know I did a code bootcamp!"
+                        },
+                    }
                 };
                 context.Tickets.Add(openTicket);
                 context.SaveChanges();
@@ -185,6 +203,7 @@ namespace cw2_ssd.Models
                 };
                 context.Tickets.Add(resolvedTicket);
                 context.SaveChanges();
+                
             } // End of if statement
         }
     }

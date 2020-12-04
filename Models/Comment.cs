@@ -8,18 +8,14 @@ namespace cw2_ssd.Models
     {
         [Key] 
         public string CommentID { get; set; }
-        
-        [ForeignKey("Customer")]
-        public string CustomerID { get; set; }
-        public Customer Customer { get; set; }
 
-        [ForeignKey("Staff")]
-        public string StaffID { get; set; }
-        public Staff Staff { get; set; }
+        [ForeignKey("User")]
+        public string UserID { get; set; }
+        public virtual User User { get; set; }
 
         [ForeignKey("Ticket")]
         public string TicketID { get; set; }
-        public Ticket Ticket { get; set; }
+        public virtual Ticket Ticket { get; set; }
         
         [Required]
         [Display(Name = "Comment Timestamp")]
