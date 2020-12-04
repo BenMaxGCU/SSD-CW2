@@ -25,13 +25,17 @@ namespace cw2_ssd.Controllers
             {
                 var comment = new Comment()
                 {
-                    CommentText = commentText,
+                    //Encode inputs like this otherwise malicious input will get through unimpeded
+                    CommentText = HttpUtility.HtmlEncode(commentText),
                     UserID = userId,
                     CommentTimestamp = DateTime.Now,
                     CommentID = Guid.NewGuid().ToString(),
                     TicketID = ticketId
                 };
                 db.Comments.Add(comment);
+                db.SaveChanges(); //need to save submitted comments so they can be retreived
+
+                //if you want to access the response in js like data.commentId change this to just return the comment (update js as well to reflect this)
                 return Json(comment.CommentID, JsonRequestBehavior.AllowGet);
             }
             else
