@@ -34,7 +34,10 @@ namespace cw2_ssd.Controllers
                 db.Comments.Add(comment);
                 return Json(comment.CommentID, JsonRequestBehavior.AllowGet);
             }
-            return Json(null, JsonRequestBehavior.AllowGet);
+            else
+            {
+                return Json(null, JsonRequestBehavior.AllowGet);
+            }
         }
         
 
@@ -68,7 +71,10 @@ namespace cw2_ssd.Controllers
                 
                 return Json(true, JsonRequestBehavior.AllowGet);
             }
-            return Json(false, JsonRequestBehavior.AllowGet);
+            else
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
         }
     }
 }

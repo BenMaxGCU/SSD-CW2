@@ -1,23 +1,25 @@
 ﻿
-function createComment(userId, ticketId, staffEmail) {
+function createComment(userId, ticketId, userEmail) {
     console.log("Success");
     const commentText = document.getElementById("commentText").value;
-
-    let ajaxCall;
-
-    ajaxCall = $.ajax({
-        url: 'Comment/Create',
-        type: 'POST',
-        data: { userId: userId, commentText: commentText, ticketId: ticketId }
-    }).done(function (data) {
-
-    });
-
+    
+    try{
+        $.ajax({
+            url: '/Comments/Create/',
+            type: 'POST',
+            data: { userId: userId, commentText: commentText, ticketId: ticketId },
+            success: function (data) {displayComment (data.commentId, data.userId, data.commentText, userEmail);},
+            error: function (jqXHR, textStatus, errorThrown) { errorFunction(); }
+        });
+    }
+    catch(err) {
+        alert(err.message);
+    }
 }
 
 function displayComment(commentId, userId, userEmail, commentText){
     if(commentId === null || commentId === undefined){
-        displayError("Failed to submit");
+        alert("Failed to submit");
     }
     
     var commentDiv = document.getElementById("comments");
@@ -34,7 +36,7 @@ function displayComment(commentId, userId, userEmail, commentText){
 
 function deleteComment(commentId) {
     $.ajax({
-        url: 'Comment/Delete' + commentId,
+        url: '/Comments/Delete/' + commentId,
         type: 'POST',
         data: { commentId: commentId },
         success: removeComment(commentId)

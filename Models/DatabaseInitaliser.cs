@@ -7,7 +7,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace cw2_ssd.Models
 {
-    public class DatabaseInitaliser : DropCreateDatabaseAlways<TicketDbContext>
+    public class DatabaseInitaliser : DropCreateDatabaseIfModelChanges<TicketDbContext>
     {
         protected override void Seed(TicketDbContext context)
         {
