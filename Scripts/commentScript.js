@@ -11,7 +11,7 @@ function createComment(userId, ticketId, userEmail) {
             url: '/Comments/Create/',
             type: 'POST',
             data: { userId: userId, commentText: commentText, ticketId: ticketId },
-            success: function (data) { displayComment(data, userId, commentText, userEmail); }, //You're returning a string and not returning an object from the controller so you can't access it like x.whatever
+            success: function (data) { displayComment(data, userId, commentText, userEmail); }, 
             error: function (jqXHR, textStatus, errorThrown) { }
         });
     }
@@ -20,8 +20,7 @@ function createComment(userId, ticketId, userEmail) {
     }
 }
 
-//made this, I can't figure out why createComment isn't getting called, received errors about wrong number of parameters
-//there may be a function with the same name in one of the jquery/bootstrap files causing a conflict but this works
+// Used to bypass why createComment wasn't being called
 function test(userId, ticketId, userEmail) {
     createComment(userId, ticketId, userEmail)
 }

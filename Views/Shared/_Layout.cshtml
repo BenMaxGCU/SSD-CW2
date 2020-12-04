@@ -2,6 +2,7 @@
     // Boolean variable to validate if the current user is logged in
     // Will be used to hide tickets link from non-registered users
     bool validUser = (User.IsInRole("Admin") || User.IsInRole("Staff") || User.IsInRole("Customer"));
+    bool regiView = (User.IsInRole("Admin"));
 }
 
 <!DOCTYPE html>
@@ -28,6 +29,10 @@
                     @if (validUser)
                     {
                         <li><a style="text-decoration: none;" href="@Url.Action("Index", "Tickets")">Tickets</a></li>
+                    }
+                    @if (regiView)
+                    {
+                        <li><a style="text-decoration: none;" href="@Url.Action("RegisterUser", "Users")">Register New User</a></li>
                     }
                     @Html.Partial("_LoginPartial")
                 </ul>

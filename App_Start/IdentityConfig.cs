@@ -86,6 +86,11 @@ namespace cw2_ssd
             }
             return manager;
         }
+
+        internal static Task<IdentityResult> CreateAsync(User regiUser, string password)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     // Configure the application sign-in manager which is used in this application.
@@ -104,6 +109,11 @@ namespace cw2_ssd
         public static ApplicationSignInManager Create(IdentityFactoryOptions<ApplicationSignInManager> options, IOwinContext context)
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
+        }
+
+        internal Task SignInAsync(User regiUser, bool isPersistent, bool rememberBrowser)
+        {
+            throw new NotImplementedException();
         }
     }
 }

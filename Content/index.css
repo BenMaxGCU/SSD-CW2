@@ -567,23 +567,19 @@ h6 {
     box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
 }
 
-#loginForm input[type=password] {
+#loginForm input[type=email] {
     min-width: 1000px;
     border-radius: 10px;
     border: none;
     box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
 }
 
-/*#loginForm input[type=checkbox] {
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0;
-    cursor: pointer;
-}*/
+#loginForm input[type=password] {
+    min-width: 1000px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0.25px 5px 5px 0px rgba(0,0,0,0.25);
+}
 
 #loginForm input[type=checkbox]:hover {
     cursor: pointer;
