@@ -36,6 +36,7 @@
         <e p="HomeController.cs" t="Include" />
         <e p="ManageController.cs" t="Include" />
         <e p="TicketsController.cs" t="Include" />
+        <e p="UsersController.cs" t="Include" />
       </e>
       <e p="cw2_ssd.csproj" t="IncludeRecursive" />
       <e p="cw2_ssd.sln" t="IncludeFlat" />
@@ -52,11 +53,14 @@
       <e p="Global.asax.cs" t="Include" />
       <e p="Models" t="Include">
         <e p="AccountViewModels.cs" t="Include" />
+        <e p="AddCompanyViewModel.cs" t="Include" />
         <e p="Comment.cs" t="Include" />
         <e p="Customer.cs" t="Include" />
         <e p="DatabaseInitaliser.cs" t="Include" />
         <e p="IdentityModels.cs" t="Include" />
         <e p="ManageViewModels.cs" t="Include" />
+        <e p="RegisterCustomerViewModel.cs" t="Include" />
+        <e p="RegisterUserViewModel.cs" t="Include" />
         <e p="Staff.cs" t="Include" />
         <e p="Ticket.cs" t="Include" />
         <e p="TicketDbContext.cs" t="Include" />
@@ -238,6 +242,16 @@
           <e p="Details.cshtml" t="Include" />
           <e p="Edit.cshtml" t="Include" />
           <e p="Index.cshtml" t="Include" />
+        </e>
+        <e p="Users" t="Include">
+          <e p="AddCompany.cshtml" t="Include" />
+          <e p="Create.cshtml" t="Include" />
+          <e p="Delete.cshtml" t="Include" />
+          <e p="Details.cshtml" t="Include" />
+          <e p="Edit.cshtml" t="Include" />
+          <e p="Index.cshtml" t="Include" />
+          <e p="RegisterCustomer.cshtml" t="Include" />
+          <e p="RegisterUser.cshtml" t="Include" />
         </e>
         <e p="Web.config" t="Include" />
       </e>

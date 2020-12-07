@@ -16,7 +16,7 @@ namespace cw2_ssd.Models
         /// <summary>
         /// New instance of user manager
         /// </summary>
-        [NotMapped] private ApplicationUserManager _userManager;
+        [NotMapped] private ApplicationUserManager userManager;
 
         /// <summary>
         /// The date the user was registered
@@ -34,12 +34,12 @@ namespace cw2_ssd.Models
         {
             get
             {
-                if (_userManager == null)
+                if (userManager == null)
                 {
-                    _userManager = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                    userManager = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
                 }
 
-                return _userManager.GetRoles(Id).Single();
+                return userManager.GetRoles(Id).Single();
             }
         }
 

@@ -34,10 +34,12 @@ namespace cw2_ssd.Models
 
         [Display(Name = "User Role")]
         public string UserRole { get; set; }
+        
+        [Display(Name = "Client Company")]
+        public string ClientCompany { get; set; }
 
         public enum rolesSelect
         {
-            Customer,
             Staff,
             Admin
         }
